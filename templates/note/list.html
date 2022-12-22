@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<title>All Notes</title>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-screen-lg mx-auto my-8">
+    {% for note in notes %}
+    <h2 class="text-2xl font-semibold underline mb-2"><a href="{% url 'show' note.pk %}">{{ note.title }}</a></h2>
+    <p class="mb-4">{{ note.content | truncatewords:50 }}</p>
+    {% endfor %}
+</div>
+{% endblock %}
