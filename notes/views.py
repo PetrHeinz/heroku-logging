@@ -10,18 +10,10 @@ logger = logging.getLogger(__name__)
 # Create your views here.
 def user_register(request):
     if request.method == "GET":
-        logger.info("A user requested the register page.")
         return render(request, "user/register.html")
     elif request.method == "POST":
         User.objects.create_user(
             request.POST["username"], request.POST["email"], request.POST["password"]
-        )
-        logger.info(
-            "A user registered a new account.",
-            extra={
-                "username": request.POST["username"],
-                "email": request.POST["email"],
-            },
         )
         return redirect("home")
 
