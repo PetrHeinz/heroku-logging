@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-9dh@3&we%l$4+o9wf49$jg8(n*ph0+s&#u9)gts6-@)%ocv5_9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["hidden-scrubland-42802.herokuapp.com", "127.0.0.1"]
+ALLOWED_HOSTS = ["heroku-logging.herokuapp.com", "127.0.0.1"]
 
 
 # Application definition
@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-
     "myapp.apps.MyappConfig"
 ]
 
