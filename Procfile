@@ -1,1 +1,1 @@
-web: gunicorn herokunotes.wsgi --log-file -
+web: gunicorn herokulogging.wsgi --log-file -
