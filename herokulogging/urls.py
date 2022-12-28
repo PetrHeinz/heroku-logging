@@ -15,16 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from notes import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", views.note_list, name="home"),
-    path("note/create/", views.note_create, name="create"),
-    path("note/<int:id>", views.note_show, name="show"),
-    path("note/update/<int:id>", views.note_update, name="update"),
-    path("note/delete/<int:id>", views.note_delete, name="delete"),
-    path("register/", views.user_register, name="register"),
-    path("login/", views.user_login, name="login"),
-    path("logout/", views.user_logout, name="logout"),
 ]
