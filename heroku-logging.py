@@ -30,6 +30,8 @@ while True:
     time.sleep(1)
     logger.info("A user has logged in.", extra={"username": "testuser"})
     time.sleep(1)
+    logger.info("Look at this large amount of information", extra={"first": "123456789 " * 250, "second": "123456789 " * 250, "third": "123456789 " * 250, "fourth": "123456789 " * 250})
+    time.sleep(1)
     logger.warning("Low disk space.", extra={"size": 25})
     time.sleep(1)
     logger.error("Error connecting to database.", extra={"dbname": "maindb"})
