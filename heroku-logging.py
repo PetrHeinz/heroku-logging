@@ -38,4 +38,13 @@ while True:
     logger.info("A8   " * 1000 + "B8   "  * 2000 + "C8   "  * 2000 + "D8   "  * 2000 + "E8   "  * 2000 + "F8   "  * 2000 + "G8   "  * 2000 + "H8   "  * 2000 + "I8   "  * 2000 + "J8   "  * 2000 + "K8   "  * 2000 + "L8   "  * 2000 + "M8   "  * 2000 + "N8   "  * 2000 + "O8   "  * 2000 + "P8   "  * 2000 + "Q8   "  * 2000 + "R8   "  * 2000 + "S8   "  * 2000 + "T8   "  * 2000 + "U8   "  * 2000 + "V8   "  * 2000 + "W8   "  * 2000 + "X8   "  * 2000 + "Y8   "  * 2000 + "Z8   "  * 2000)
     logger.info("A9   " * 1000 + "B9   "  * 2000 + "C9   "  * 2000 + "D9   "  * 2000 + "E9   "  * 2000 + "F9   "  * 2000 + "G9   "  * 2000 + "H9   "  * 2000 + "I9   "  * 2000 + "J9   "  * 2000 + "K9   "  * 2000 + "L9   "  * 2000 + "M9   "  * 2000 + "N9   "  * 2000 + "O9   "  * 2000 + "P9   "  * 2000 + "Q9   "  * 2000 + "R9   "  * 2000 + "S9   "  * 2000 + "T9   "  * 2000 + "U9   "  * 2000 + "V9   "  * 2000 + "W9   "  * 2000 + "X9   "  * 2000 + "Y9   "  * 2000 + "Z9   "  * 2000)
     time.sleep(1)
+    logger.info("JSON message {\"test\":\"value\"}")
+    logger.info("JSON message {\"test\":\"value\",\"more words test\":\"more words value\"}")
+    logger.info("JSON message {\"test\":\"value\",\"special\":\"quote \\\"\"}")
+    logger.info("JSON message {\"test\":\"value\",\"more words test\":\"more words value\",\"special\":\"quote \\\"\"}")
+    logger.info("JSON message with extra {\"test\":\"value\"}", extra={"test": "value"})
+    logger.info("JSON message with extra {\"test\":\"value\",\"more words test\":\"more words value\"}", extra={"test": "value", "more words test": "more words value"})
+    logger.info("JSON message with extra {\"test\":\"value\",\"special\":\"quote \\\"\"}", extra={"test": "value", "special": "quote \""})
+    logger.info("JSON message with extra {\"test\":\"value\",\"more words test\":\"more words value\",\"special\":\"quote \\\"\"}", extra={"test": "value", "more words test": "more words value", "special": "quote \""})
+    time.sleep(1)
 
